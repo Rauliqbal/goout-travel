@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+   body {
+      @apply font-poppins;
+   }
+
+   section {
+      @apply my-[120px];
+   }
+}
+
+@layer components {
+   .section-title {
+      @apply text-[#3258e8] leading-10 font-semibold;
+   }
+
+   .section-subtitle {
+      @apply text-4xl font-semibold leading-10;
+   }
+}
