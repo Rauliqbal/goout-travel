@@ -14,9 +14,9 @@ const packages = [
 </script>
 <template>
    <section class="max-w-[1092px] mx-auto">
-      <div class="flex gap-[60px]">
+      <div class="flex gap-[60px] items-center">
          <div class="grid grid-cols-2 gap-4">
-            <button class="focus:ring-4 focus:ring-[#3258E8] p-3 rounded-3xl transition-all duration-300 ease-out" v-for="list in packages" :key="list">
+            <button class="hover:ring-4 hover:ring-[#3258E8] focus:ring-4 focus:ring-[#3258E8] p-3 rounded-3xl transition-all duration-300 ease-out" v-for="list in packages" :key="list">
                <div class="flex items-end relative rounded-2xl overflow-hidden">
                   <img :src="'/_nuxt/assets/images/' + list.image" alt="" />
                   <div class="bg-gradient-to-t from-black to-transparent absolute inset-x-0 p-6">
@@ -40,7 +40,29 @@ const packages = [
          <div>
             <h2 class="section-title">Our Package</h2>
             <p class="section-subtitle">Popular Trip Packages</p>
-            <p class="leading-8 text-[#7B7B7B] max-w-[409px] mt-3">A new way to travel by air the easy and fast way. Try it now by filling out the form below!</p>
+            <p class="desc max-w-[409px] mt-3">A new way to travel by air the easy and fast way. Try it now by filling out the form below!</p>
+
+            <div class="flex items-center gap-[26px] mt-[30px]">
+               <div>
+                  <h4 class="text-xl font-semibold">120+</h4>
+                  <p class="text-[#7b7b7b] mt-[2px]">Destination</p>
+               </div>
+
+               <div>
+                  <h4 class="text-xl font-semibold">560+</h4>
+                  <p class="text-[#7b7b7b] mt-[2px]">Luxury Hotels</p>
+               </div>
+
+               <div>
+                  <h4 class="text-xl font-semibold">135K+</h4>
+                  <p class="text-[#7b7b7b] mt-[2px]">Happy Tourist</p>
+               </div>
+            </div>
+
+            <div class="flex gap-[30px] mt-[30px]">
+               <button class="btn-primary">Choose Package</button>
+               <button class="btn-link">View More</button>
+            </div>
          </div>
       </div>
    </section>

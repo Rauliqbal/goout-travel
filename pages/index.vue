@@ -8,5 +8,6 @@ useHead({
       <Header />
       <Service />
       <Package />
+      <Catalog />
    </main>
 </template>
