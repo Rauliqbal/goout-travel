@@ -13,14 +13,14 @@ const packages = [
 ];
 </script>
 <template>
-   <section class="max-w-[1092px] mx-auto">
-      <div class="flex gap-[60px] items-center">
+   <section class="container md:max-w-[1092px] mx-auto">
+      <div class="flex flex-col lg:flex-row gap-[60px] items-center">
          <div class="grid grid-cols-2 gap-4">
-            <button class="hover:ring-4 hover:ring-[#3258E8] focus:ring-4 focus:ring-[#3258E8] p-3 rounded-3xl transition-all duration-300 ease-out" v-for="list in packages" :key="list">
+            <button class="hover:ring-4 hover:ring-[#3258E8] focus:ring-4 focus:ring-[#3258E8] p-1 md:p-3 rounded-3xl transition-all duration-300 ease-out" v-for="list in packages" :key="list">
                <div class="flex items-end relative rounded-2xl overflow-hidden">
                   <img :src="'/_nuxt/assets/images/' + list.image" alt="" />
-                  <div class="bg-gradient-to-t from-black to-transparent absolute inset-x-0 p-6">
-                     <h4 class="text-white text-lg font-semibold text-left">{{ list.title }}</h4>
+                  <div class="bg-gradient-to-t from-black to-transparent absolute inset-x-0 p-3 md:p-6">
+                     <h4 class="text-[12px] text-white text-lg font-semibold text-left">{{ list.title }}</h4>
                      <div class="flex items-center gap-1">
                         <svg width="11" height="16" viewBox="0 0 11 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                            <path
@@ -31,7 +31,7 @@ const packages = [
                            />
                         </svg>
 
-                        <h5 class="text-white mt-1 text-left">{{ list.location }}</h5>
+                        <h5 class="text-[8px] text-white mt-1 text-left">{{ list.location }}</h5>
                      </div>
                   </div>
                </div>
@@ -42,7 +42,7 @@ const packages = [
             <p class="section-subtitle">Popular Trip Packages</p>
             <p class="desc max-w-[409px] mt-3">A new way to travel by air the easy and fast way. Try it now by filling out the form below!</p>
 
-            <div class="flex items-center gap-[26px] mt-[30px]">
+            <div class="flex items-center gap-4 md:gap-[26px] mt-[30px]">
                <div>
                   <h4 class="text-xl font-semibold">120+</h4>
                   <p class="text-[#7b7b7b] mt-[2px]">Destination</p>
@@ -59,7 +59,7 @@ const packages = [
                </div>
             </div>
 
-            <div class="flex gap-[30px] mt-[30px]">
+            <div class="flex flex-col md:flex-row gap-[30px] mt-[30px]">
                <button class="btn-primary">Choose Package</button>
                <button class="btn-link">View More</button>
             </div>

@@ -61,7 +61,7 @@ const catalog = [
       </p>
 
       <!-- Catalog -->
-      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[60px] gap-[30px]">
+      <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 mt-[60px] gap-[30px]">
          <!-- Card -->
          <div class="bg-white shadow-lg hover:shadow-2xl transition duration-300 rounded-3xl" v-for="list in catalog" :key="list">
             <div>

@@ -24,13 +24,13 @@ const services = [
 </script>
 <template>
    <section class="container bg-[#FAFAFA] rounded-3xl overflow-hidden">
-      <div class="flex items-center px-16 py-10">
+      <div class="flex flex-col lg:flex-row items-start md:items-center px-0 md:px-16 py-10 gap-8">
          <div class="mr-[140px]">
             <h2 class="section-title">Our Service</h2>
             <p class="section-subtitle w-[222px]">We Offer Best Service</p>
          </div>
 
-         <div class="grid grid-cols-2 grid-rows-2 gap-[60px]">
+         <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-8 md:gap-[60px]">
             <div class="flex items-start gap-[30px]" v-for="service in services" :key="service">
                <img :src="'/_nuxt/assets/images/' + service.image" alt="" />
                <div>
