@@ -9,5 +9,6 @@ useHead({
       <Service />
       <Package />
       <Catalog />
+      <Newuser />
    </main>
 </template>

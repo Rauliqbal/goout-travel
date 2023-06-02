@@ -17,6 +17,9 @@ module.exports = {
          fontFamily: {
             poppins: ["poppins", "sans-serif"],
          },
+         backgroundImage: {
+            pattern: "url('~/assets/images/global.svg')",
+         },
       },
    },
    plugins: [],

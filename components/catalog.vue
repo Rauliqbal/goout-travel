@@ -60,9 +60,10 @@ const catalog = [
          Try it now by filling out the form below!
       </p>
 
+      <!-- Catalog -->
       <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-[60px] gap-[30px]">
          <!-- Card -->
-         <div class="bg-white shadow-lg rounded-3xl" v-for="list in catalog" :key="list">
+         <div class="bg-white shadow-lg hover:shadow-2xl transition duration-300 rounded-3xl" v-for="list in catalog" :key="list">
             <div>
                <img class="rounded-3xl" :src="'/_nuxt/assets/images/' + list.image" alt="" />
             </div>
@@ -78,6 +79,10 @@ const catalog = [
                </div>
             </div>
          </div>
+      </div>
+
+      <div class="flex justify-center mt-[60px]">
+         <button class="py-[14px] px-6 rounded-full ring-1 ring-[#7b7b7b]">View More</button>
       </div>
    </section>
 </template>
