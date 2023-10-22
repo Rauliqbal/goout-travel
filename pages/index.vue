@@ -5,7 +5,7 @@ useHead({
 </script>
 <template>
    <main>
-      <Header />
+      <Hero/>
       <Service />
       <Package />
       <Catalog />

@@ -5,7 +5,7 @@ function showHide() {
 }
 </script>
 <template>
-   <nav class="fixed inset-x-0 top-0 z-30 py-4 md:py-6 bg-white shadow-md">
+   <nav class="inset-x-0 top-0 z-30 py-4 md:py-6 bg-white">
       <div class="container">
          <div class="flex items-center justify-between">
             <div class="relative">

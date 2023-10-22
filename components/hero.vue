@@ -1,6 +1,6 @@
 <script setup></script>
 <template>
-   <div class="container mt-[80px]">
+   <div class="container mt-10">
       <div class="grid grid-cols-1 md:grid-cols-2 bg-[#FAFAFA] rounded-3xl items-center">
          <div class="md:pl-[60px] p-8">
             <h1 class="text-3xl md:text-[52px] md:leading-[78px] font-bold">
